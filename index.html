@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Random Redirector</title>
+    <!-- Optional: Prevent search engines from indexing this page -->
+    <meta name="robots" content="noindex, nofollow">
+    <script type="text/javascript">
+        // List of URLs to redirect to
+        var urls = [
+            "https://duckduckgo.com/",
+            "https://vaasa.fi/"
+        ];
+
+        // Randomly select one URL
+        var randomIndex = Math.floor(Math.random() * urls.length);
+
+        // Redirect to the selected URL
+        window.location.replace(urls[randomIndex]);
+    </script>
+</head>
+<body>
+    <!-- Content for users without JavaScript enabled -->
+    <noscript>
+        <p>Please enable JavaScript to be redirected.</p>
+    </noscript>
+</body>
+</html>
